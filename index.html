@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to MyPortfolio – a professional web developer portfolio showcasing skills, projects, and contact information." />
+  <meta name="keywords" content="web developer, portfolio, HTML, CSS, JavaScript, frontend developer" />
+  <meta name="author" content="Alex Johnson" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Alex Johnson | Web Developer Portfolio" />
+  <meta property="og:description" content="Professional web developer specializing in modern, responsive websites." />
+  <meta property="og:url" content="https://alexjohnson.dev/" />
+  <meta property="og:image" content="https://alexjohnson.dev/assets/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alex Johnson | Web Developer Portfolio" />
+  <meta name="twitter:description" content="Professional web developer specializing in modern, responsive websites." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://alexjohnson.dev/" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alex Johnson",
+    "url": "https://alexjohnson.dev",
+    "jobTitle": "Web Developer",
+    "email": "alex@alexjohnson.dev"
+  }
+  </script>
+
+  <title>Alex Johnson | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-current="page">Alex<span>Dev</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="hero-tag">👋 Hello, I'm</p>
+        <h1>Alex Johnson</h1>
+        <p class="hero-subtitle">Full-Stack Web Developer</p>
+        <p class="hero-desc">I build beautiful, fast, and accessible websites that make an impact. Specialized in HTML, CSS, and JavaScript.</p>
+        <div class="hero-btns">
+          <a href="contact.html" class="btn btn-primary">Hire Me</a>
+          <a href="about.html" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="code-card">
+          <div class="code-dots"><span></span><span></span><span></span></div>
+          <pre><code><span class="kw">const</span> developer = {
+  name: <span class="str">"Alex Johnson"</span>,
+  skills: [<span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JS"</span>],
+  passion: <span class="str">"Building the web"</span>,
+  available: <span class="kw">true</span>
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading">What I Do</h2>
+        <p class="section-sub">Core technologies I work with every day</p>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon">🌐</div>
+            <h3>HTML5</h3>
+            <p>Semantic, accessible markup that forms the backbone of every great website.</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="95" style="width:0%"></div></div>
+            <span class="skill-pct">95%</span>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">🎨</div>
+            <h3>CSS3</h3>
+            <p>Responsive, pixel-perfect designs using Flexbox, Grid, and modern animations.</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="90" style="width:0%"></div></div>
+            <span class="skill-pct">90%</span>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">⚡</div>
+            <h3>JavaScript</h3>
+            <p>Interactive, dynamic experiences with vanilla JS and modern ES6+ features.</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="88" style="width:0%"></div></div>
+            <span class="skill-pct">88%</span>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">🔧</div>
+            <h3>Git & GitHub</h3>
+            <p>Version control and collaboration with Git workflows and GitHub deployments.</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="85" style="width:0%"></div></div>
+            <span class="skill-pct">85%</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading">Featured Projects</h2>
+        <p class="section-sub">Some of my recent work</p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-img" style="background:#667eea22;">🛒</div>
+            <div class="project-body">
+              <h3>E-Commerce Store</h3>
+              <p>A fully responsive online store with cart, filtering, and checkout flow.</p>
+              <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-img" style="background:#f59e0b22;">📊</div>
+            <div class="project-body">
+              <h3>Dashboard UI</h3>
+              <p>Analytics dashboard with real-time charts and dark/light theme toggle.</p>
+              <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-img" style="background:#10b98122;">📝</div>
+            <div class="project-body">
+              <h3>Blog Platform</h3>
+              <p>A clean blog with search, categories, and reading time estimation.</p>
+              <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Alex Johnson. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

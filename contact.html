@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Alex Johnson – web developer available for freelance projects, collaborations, and consulting." />
+  <meta name="keywords" content="contact Alex Johnson, hire web developer, freelance developer, web development inquiry" />
+  <meta name="author" content="Alex Johnson" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact Alex Johnson | Web Developer" />
+  <meta property="og:description" content="Get in touch for freelance projects, collaborations, or just to say hello." />
+  <meta property="og:url" content="https://alexjohnson.dev/contact.html" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Contact Alex Johnson | Web Developer" />
+
+  <link rel="canonical" href="https://alexjohnson.dev/contact.html" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Alex Johnson",
+    "url": "https://alexjohnson.dev/contact.html",
+    "description": "Contact page for Alex Johnson, web developer."
+  }
+  </script>
+
+  <title>Contact | Alex Johnson – Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo">Alex<span>Dev</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Get In Touch</h1>
+        <p>Have a project in mind? Let's build something amazing together.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2 id="contact-heading">Let's Connect</h2>
+          <p>I'm currently available for freelance projects and full-time roles. If you have a project that needs great development work, I'd love to hear from you!</p>
+
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="info-icon">📧</div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:alex@alexjohnson.dev">alex@alexjohnson.dev</a>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <div>
+                <strong>Location</strong>
+                <span>Karachi, Pakistan</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">🕐</div>
+              <div>
+                <strong>Response Time</strong>
+                <span>Within 24 hours</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">💼</div>
+              <div>
+                <strong>Availability</strong>
+                <span class="available-badge">Open to Work</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" aria-label="GitHub profile" class="social-btn">GitHub</a>
+            <a href="#" aria-label="LinkedIn profile" class="social-btn">LinkedIn</a>
+            <a href="#" aria-label="Twitter profile" class="social-btn">Twitter</a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <div class="form-card">
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <label for="name">Full Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required autocomplete="name" />
+              <span class="field-error" id="nameError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email" />
+              <span class="field-error" id="emailError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project inquiry..." autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              <span class="field-error" id="messageError" role="alert"></span>
+            </div>
+            <button type="button" id="submitBtn" class="btn btn-primary btn-full">
+              <span id="btnText">Send Message</span>
+              <span id="btnLoader" class="btn-loader" aria-hidden="true" hidden>⏳</span>
+            </button>
+            <div id="formSuccess" class="form-success" hidden role="status">
+              ✅ Message sent successfully! I'll reply within 24 hours.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Alex Johnson. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

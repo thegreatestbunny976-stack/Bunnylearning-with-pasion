@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about Alex Johnson – a passionate web developer with 5+ years of experience building responsive, user-friendly websites." />
+  <meta name="keywords" content="about Alex Johnson, web developer, frontend, HTML CSS JavaScript, portfolio" />
+  <meta name="author" content="Alex Johnson" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="About Alex Johnson | Web Developer" />
+  <meta property="og:description" content="Learn about Alex Johnson – a passionate web developer with 5+ years of experience." />
+  <meta property="og:url" content="https://alexjohnson.dev/about.html" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="About Alex Johnson | Web Developer" />
+
+  <link rel="canonical" href="https://alexjohnson.dev/about.html" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Alex Johnson",
+    "url": "https://alexjohnson.dev/about.html",
+    "description": "Learn about Alex Johnson, a passionate web developer.",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Alex Johnson",
+      "jobTitle": "Web Developer"
+    }
+  }
+  </script>
+
+  <title>About | Alex Johnson – Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo">Alex<span>Dev</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active" aria-current="page">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>About Me</h1>
+        <p>Passionate developer. Creative problem-solver. Lifelong learner.</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <div class="about-visual" aria-hidden="true">
+          <div class="avatar-card">
+            <div class="avatar-emoji">👨‍💻</div>
+            <div class="avatar-info">
+              <strong>Alex Johnson</strong>
+              <span>Web Developer</span>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num" data-target="5">0</span><span>Years Exp.</span></div>
+            <div class="stat"><span class="stat-num" data-target="40">0</span><span>Projects</span></div>
+            <div class="stat"><span class="stat-num" data-target="25">0</span><span>Clients</span></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 id="about-heading">Who I Am</h2>
+          <p>Hi! I'm <strong>Alex Johnson</strong>, a full-stack web developer with over 5 years of experience crafting modern, responsive, and performant websites. I specialize in front-end development and love turning complex ideas into beautiful, functional digital experiences.</p>
+          <p>I believe great development is about more than just writing code – it's about understanding the user, collaborating with teams, and delivering results that matter.</p>
+
+          <h3>My Journey</h3>
+          <p>I started coding at age 16, building small websites for friends and family. What began as a hobby evolved into a full-time career. Today, I work with clients across the globe to build websites that are fast, accessible, and SEO-optimized.</p>
+
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <h4>2019 – Started Freelancing</h4>
+                <p>Built first client websites using HTML, CSS, and JavaScript.</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <h4>2021 – Joined a Tech Agency</h4>
+                <p>Worked on large-scale projects and honed skills in Git, GitHub, and team workflows.</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <h4>2024 – Went Independent</h4>
+                <p>Launched my own portfolio and consulting practice, serving 25+ clients.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="contact.html" class="btn btn-primary" style="margin-top:1.5rem;display:inline-block;">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools & Technologies -->
+    <section class="tools-section" aria-labelledby="tools-heading">
+      <div class="container">
+        <h2 id="tools-heading">Tools & Technologies</h2>
+        <p class="section-sub">Technologies I use to build great products</p>
+        <div class="tools-grid">
+          <div class="tool-badge">HTML5</div>
+          <div class="tool-badge">CSS3</div>
+          <div class="tool-badge">JavaScript</div>
+          <div class="tool-badge">Git</div>
+          <div class="tool-badge">GitHub</div>
+          <div class="tool-badge">GitHub Pages</div>
+          <div class="tool-badge">VS Code</div>
+          <div class="tool-badge">Figma</div>
+          <div class="tool-badge">SEO</div>
+          <div class="tool-badge">Responsive Design</div>
+          <div class="tool-badge">Web Accessibility</div>
+          <div class="tool-badge">Performance</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Alex Johnson. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
